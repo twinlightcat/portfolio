@@ -11,11 +11,14 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
     <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border dark:border-accent/50 p-4 md:p-6 lg:sticky lg:top-8 h-fit">
       {/* Profile - side by side when stacked, centered when sidebar */}
       <div className="flex flex-row items-center gap-4 lg:flex-col lg:items-center">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-32 lg:h-32 shrink-0 overflow-hidden rounded-full lg:rounded-none lg:mb-4 lg:mb-6">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-32 lg:h-32 shrink-0 overflow-hidden rounded-full lg:rounded-none lg:mb-6 aspect-square">
           <img
             src={data.avatar || '/placeholder.svg'}
             alt={data.name}
-            className="w-full h-full object-cover lg:object-contain"
+            width={128}
+            height={128}
+            className="w-full h-full object-cover"
+            fetchPriority="high"
           />
         </div>
 
