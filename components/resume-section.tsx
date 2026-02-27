@@ -37,7 +37,13 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
                   </p>
                 </div>
                 <div className="mt-2 sm:mt-0 flex flex-col sm:items-end">
-                  <Badge variant="outline" className="text-xs">
+                  <span className="text-xs text-muted-foreground sm:hidden">
+                    {item.period}
+                  </span>
+                  <Badge
+                    variant="outline"
+                    className="text-xs hidden sm:inline-flex"
+                  >
                     {item.period}
                   </Badge>
                   <span className="text-xs text-muted-foreground mt-1">
