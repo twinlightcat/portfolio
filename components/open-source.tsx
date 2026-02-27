@@ -8,13 +8,13 @@ export default function OpenSource() {
     {
       title: 'Personal GitHub',
       description:
-        'Personal projects and explorations including React.js AI clients and MCP servers.',
+        'Personal projects and explorations. Some projects are private.',
       link: 'https://github.com/twinlightcat',
     },
     {
       title: 'Workplace GitHub',
       description:
-        "Internal contributions to GoDaddy's developer platform ecosystem, CI/CD tools, and infrastructure tooling.",
+        "Private internal contributions to GoDaddy's applications, developer platform ecosystem, CI/CD tools, and infrastructure tooling.",
       link: 'https://github.com/trhodes-godaddy',
     },
   ];
@@ -28,7 +28,10 @@ export default function OpenSource() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {contributions.map((contribution, index) => (
-          <Card key={index} className="h-full flex flex-col rounded-xl md:rounded-2xl py-0 shadow-none border-border dark:border-accent/50">
+          <Card
+            key={index}
+            className="h-full flex flex-col rounded-xl md:rounded-2xl py-0 shadow-none border-border dark:border-accent/50"
+          >
             <CardContent className="p-4 md:p-6 flex-1 flex flex-col">
               <div className="mb-3">
                 <Github className="h-7 w-7 text-primary" />
@@ -38,7 +41,12 @@ export default function OpenSource() {
                 {contribution.description}
               </p>
 
-              <Button variant="outline" size="sm" asChild className="w-full hover:bg-[oklch(0.82_0.12_55)] hover:text-foreground hover:border-[oklch(0.82_0.12_55)]">
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="w-full hover:bg-[oklch(0.82_0.12_55)] hover:text-foreground hover:border-[oklch(0.82_0.12_55)]"
+              >
                 <Link
                   href={contribution.link}
                   target="_blank"
