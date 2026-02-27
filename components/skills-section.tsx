@@ -30,7 +30,7 @@ export function SkillsSection({ data = skillsData }: SkillsSectionProps) {
               {category.skills.map((skill, i) => (
                 <span
                   key={i}
-                  className="text-xs bg-secondary text-muted-foreground px-2 py-1 rounded-full"
+                  className="text-xs bg-secondary dark:bg-[#1e293b] text-muted-foreground dark:text-foreground px-2 py-1 rounded-full"
                 >
                   {skill}
                 </span>

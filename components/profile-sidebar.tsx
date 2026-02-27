@@ -9,22 +9,24 @@ interface ProfileSidebarProps {
 export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
   return (
     <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border dark:border-accent/50 p-4 md:p-6 lg:sticky lg:top-8 h-fit">
-      {/* Profile Image */}
-      <div className="flex flex-col items-center">
-        <div className="w-24 h-24 md:w-32 md:h-32 mb-4 md:mb-6  overflow-hidden">
+      {/* Profile - side by side when stacked, centered when sidebar */}
+      <div className="flex flex-row items-center gap-4 lg:flex-col lg:items-center">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-32 lg:h-32 shrink-0 overflow-hidden rounded-full lg:rounded-none lg:mb-4 lg:mb-6">
           <img
             src={data.avatar || '/placeholder.svg'}
             alt={data.name}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover lg:object-contain"
           />
         </div>
 
-        <h1 className="text-xl md:text-2xl font-bold text-foreground mb-1">
-          {data.name}
-        </h1>
-        <p className="text-xs md:text-sm text-muted-foreground bg-secondary px-3 md:px-4 py-1 rounded-lg">
-          {data.title}
-        </p>
+        <div className="min-w-0 flex-1 lg:text-center lg:flex-none">
+          <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-0.5 lg:mb-1 truncate">
+            {data.name}
+          </h1>
+          <p className="text-xs sm:text-sm text-muted-foreground bg-secondary dark:bg-[#1e293b] dark:text-foreground px-2 py-0.5 sm:px-3 sm:py-1 rounded-lg inline-block lg:inline">
+            {data.title}
+          </p>
+        </div>
       </div>
 
       {/* Divider */}
