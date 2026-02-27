@@ -13,8 +13,8 @@ export const profileData = {
 
 export const aboutData = {
   description: [
-    'Engineer with 13+ years of experience in full-stack development, customer-facing applications, platform engineering, and developer productivity tools. Proven track record at GoDaddy and PayPal in enhancing experiences for applications, building scalable internal developer platforms, and creating CI/CD systems.',
-    'Passionate about UX, Design, APIs, cloud-native technologies, and DevOps. A lifelong learner currently exploring React.js AI clients and MCP servers.',
+    'I am a full-stack engineer with over 13 years of hands-on experience in customer-facing applications, platform engineering, and developer productivity tools. At GoDaddy and PayPal, I improved user experiences at scale, built internal developer platforms, and created efficient CI/CD systems that empowered teams and accelerated delivery.',
+    'I believe in a strong product mindset and always prioritize the end-user experience. I’m deeply passionate about UX, design systems, elegant APIs, cloud-native architectures, and DevOps. As a lifelong learner, I’m currently diving into AI, experimenting with React chat interfaces, tool-calling patterns, and MCP servers.',
   ],
   services: [
     {
