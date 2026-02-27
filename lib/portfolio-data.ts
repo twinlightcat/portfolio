@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Thomas Rhodes',
   title: 'Senior Software Engineer',
-  avatar: '/professional-developer-avatar.png',
+  avatar: '/avatar.png',
   email: 'twinlightcat@pm.me',
   location: 'Chandler, AZ',
   social: {
