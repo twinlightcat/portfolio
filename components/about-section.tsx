@@ -1,11 +1,11 @@
-import { Code, Server, Users, Globe } from 'lucide-react';
+import { PenTool, Code, Server, Zap } from 'lucide-react';
 import { aboutData } from '@/lib/portfolio-data';
 
 const iconMap = {
+  PenTool,
   Code,
   Server,
-  Users,
-  Globe,
+  Zap,
 };
 
 interface AboutSectionProps {
@@ -39,7 +39,7 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
             return (
               <div
                 key={index}
-                className="flex gap-3 md:gap-4 p-4 md:p-6 bg-secondary/50 rounded-xl md:rounded-2xl border border-border hover:border-accent/50 transition-colors"
+                className="flex gap-3 md:gap-4 p-4 md:p-6 bg-card rounded-xl md:rounded-2xl border border-border dark:border-accent/50"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 shrink-0">
                   <IconComponent

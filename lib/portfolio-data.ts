@@ -44,6 +44,71 @@ export const aboutData = {
   ],
 };
 
+export const skillsData = {
+  subtitle: 'My expertise and technical proficiencies',
+  categories: [
+    {
+      name: 'Languages',
+      skills: ['TypeScript/JavaScript', 'Node.js', 'Go/Golang', 'Python'],
+    },
+    {
+      name: 'Frontend',
+      skills: [
+        'React.js',
+        'Next.js',
+        'Redux',
+        'React Query',
+        'Tailwind CSS',
+        'Figma',
+      ],
+    },
+    {
+      name: 'Backend',
+      skills: [
+        'RESTful APIs',
+        'OpenAPI/Swagger',
+        'GraphQL',
+        'Microservices',
+        'MySQL',
+        'Aurora',
+      ],
+    },
+    {
+      name: 'DevOps & CI/CD',
+      skills: [
+        'GitHub Actions',
+        'Docker',
+        'Kubernetes',
+        'CDK',
+        'Helm',
+        'Istio',
+      ],
+    },
+    {
+      name: 'Cloud & Infrastructure',
+      skills: [
+        'AWS CloudFormation',
+        'S3',
+        'CloudWatch',
+        'EKS',
+        'ECS',
+        'Infrastructure-as-Code',
+      ],
+    },
+    {
+      name: 'Tools & Testing',
+      skills: [
+        'Cypress',
+        'Playwright',
+        'Jest',
+        'Vite',
+        'ELK Stack',
+        'Prometheus',
+      ],
+    },
+  ],
+};
+
 export const resumeData = {
   experience: [
     {

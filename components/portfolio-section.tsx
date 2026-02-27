@@ -28,11 +28,11 @@ export function PortfolioSection({
           Key projects from my professional career
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {data.projects.map((project, index) => (
           <div key={index} className="project-card">
-            <Card className="overflow-hidden h-full flex flex-col">
-              <CardContent className="flex-1 flex flex-col p-5">
+            <Card className="overflow-hidden h-full flex flex-col rounded-xl md:rounded-2xl py-0 shadow-none border-border dark:border-accent/50">
+              <CardContent className="flex-1 flex flex-col p-4 md:p-6">
                 <h3 className="text-lg font-bold">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mt-2 flex-1">
                   {project.description}
@@ -41,7 +41,7 @@ export function PortfolioSection({
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-xs bg-primary/10 px-2 py-1 rounded-full"
+                      className="text-xs bg-secondary text-muted-foreground px-2 py-1 rounded-full"
                     >
                       {tag}
                     </span>

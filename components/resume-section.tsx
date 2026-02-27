@@ -21,17 +21,12 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
 
       {/* Experience */}
       <div>
-        {/*<div className="flex items-center gap-2 md:gap-3 mb-6">*/}
-        {/*  <Briefcase className="w-5 h-5 md:w-6 md:h-6 text-accent" />*/}
-        {/*  <h3 className="text-xl md:text-2xl font-bold text-foreground">Experience</h3>*/}
-        {/*</div>*/}
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 gap-3 md:gap-4">
           {data.experience.map((item, index) => (
             <div
               key={index}
-              className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0"
+              className="flex flex-col p-4 md:p-6 bg-card rounded-xl md:rounded-2xl border border-border dark:border-accent/50"
             >
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">
@@ -50,9 +45,6 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
                   </span>
                 </div>
               </div>
-              {/*<p className="text-xs md:text-sm text-accent mb-2">*/}
-              {/*  {item.period}*/}
-              {/*</p>*/}
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                 {item.description}
               </p>
