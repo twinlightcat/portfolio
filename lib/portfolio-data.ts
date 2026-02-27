@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Thomas Rhodes',
   title: 'Senior Software Engineer',
-  avatar: '/professional-developer-avatar.png',
+  avatar: '/avatar.png',
   email: 'twinlightcat@pm.me',
   location: 'Chandler, AZ',
   social: {
@@ -40,6 +40,71 @@ export const aboutData = {
       title: 'CI/CD & DevOps',
       description:
         'Created custom CI/CD systems, GitHub Actions workflows, and developer productivity tools.',
+    },
+  ],
+};
+
+export const skillsData = {
+  subtitle: 'My expertise and technical proficiencies',
+  categories: [
+    {
+      name: 'Languages',
+      skills: ['TypeScript/JavaScript', 'Node.js', 'Go/Golang', 'Python'],
+    },
+    {
+      name: 'Frontend',
+      skills: [
+        'React.js',
+        'Next.js',
+        'Redux',
+        'React Query',
+        'Tailwind CSS',
+        'Figma',
+      ],
+    },
+    {
+      name: 'Backend',
+      skills: [
+        'RESTful APIs',
+        'OpenAPI/Swagger',
+        'GraphQL',
+        'Microservices',
+        'MySQL',
+        'Aurora',
+      ],
+    },
+    {
+      name: 'DevOps & CI/CD',
+      skills: [
+        'GitHub Actions',
+        'Docker',
+        'Kubernetes',
+        'CDK',
+        'Helm',
+        'Istio',
+      ],
+    },
+    {
+      name: 'Cloud & Infrastructure',
+      skills: [
+        'AWS CloudFormation',
+        'S3',
+        'CloudWatch',
+        'EKS',
+        'ECS',
+        'Infrastructure-as-Code',
+      ],
+    },
+    {
+      name: 'Tools & Testing',
+      skills: [
+        'Cypress',
+        'Playwright',
+        'Jest',
+        'Vite',
+        'ELK Stack',
+        'Prometheus',
+      ],
     },
   ],
 };

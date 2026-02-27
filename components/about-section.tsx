@@ -1,12 +1,11 @@
-import { PenTool, Code, Smartphone, Zap, Server } from 'lucide-react';
+import { PenTool, Code, Server, Zap } from 'lucide-react';
 import { aboutData } from '@/lib/portfolio-data';
 
 const iconMap = {
-  Code,
-  Zap,
-  Smartphone,
   PenTool,
+  Code,
   Server,
+  Zap,
 };
 
 interface AboutSectionProps {
@@ -21,8 +20,8 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
         <h2 className="text-2xl md:text-3xl font-bold text-foreground">
           About Me
         </h2>
-        <div className="w-10 h-1 bg-accent rounded-full mb-6 mt-1" />
-        <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
+        <div className="w-16 h-0.5 bg-accent mb-6 mt-1" />
+        <div className="space-y-4 text-sm md:text-base text-foreground leading-relaxed">
           {data.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
@@ -40,9 +39,9 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
             return (
               <div
                 key={index}
-                className="flex gap-3 md:gap-4 p-4 md:p-6 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors"
+                className="flex gap-3 md:gap-4 p-4 md:p-6 bg-card rounded-xl md:rounded-2xl border border-border dark:border-accent/50"
               >
-                <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+                <div className="w-10 h-10 md:w-12 md:h-12 shrink-0">
                   <IconComponent
                     className="w-full h-full text-accent"
                     strokeWidth={1.5}
@@ -52,7 +51,7 @@ export function AboutSection({ data = aboutData }: AboutSectionProps) {
                   <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">
                     {service.title}
                   </h4>
-                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-xs md:text-sm text-foreground leading-relaxed">
                     {service.description}
                   </p>
                 </div>

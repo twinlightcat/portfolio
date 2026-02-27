@@ -26,10 +26,10 @@ export default function OpenSource() {
         Find my work across personal and professional GitHub accounts
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {contributions.map((contribution, index) => (
-          <Card key={index} className="h-full flex flex-col">
-            <CardContent className="p-5 flex-1 flex flex-col">
+          <Card key={index} className="h-full flex flex-col rounded-xl md:rounded-2xl py-0 shadow-none border-border dark:border-accent/50">
+            <CardContent className="p-4 md:p-6 flex-1 flex flex-col">
               <div className="mb-3">
                 <Github className="h-7 w-7 text-primary" />
               </div>
@@ -38,7 +38,7 @@ export default function OpenSource() {
                 {contribution.description}
               </p>
 
-              <Button variant="outline" size="sm" asChild className="w-full">
+              <Button variant="outline" size="sm" asChild className="w-full hover:bg-[oklch(0.82_0.12_55)] hover:text-foreground hover:border-[oklch(0.82_0.12_55)]">
                 <Link
                   href={contribution.link}
                   target="_blank"

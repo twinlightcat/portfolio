@@ -18,9 +18,9 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
         <div className="w-10 h-1 bg-accent rounded-full mt-1 mb-6" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
-          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-card dark:bg-secondary rounded-xl md:rounded-2xl border border-border dark:border-accent/50 transition-colors">
+          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
             <Mail className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
           <div className="min-w-0">
@@ -36,8 +36,8 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
-          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-card dark:bg-secondary rounded-xl md:rounded-2xl border border-border dark:border-accent/50 transition-colors">
+          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
             <Github className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
           <div>
@@ -54,8 +54,8 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
             </a>
           </div>
         </div>
-        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors group">
-          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+        <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-card dark:bg-secondary rounded-xl md:rounded-2xl border border-border dark:border-accent/50 transition-colors">
+          <div className="w-12 h-12 md:w-14 md:h-14 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
             <Github className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
           <div>
@@ -73,7 +73,7 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
           </div>
         </div>
       </div>
-      <div className="w-full h-64 md:h-80 rounded-xl md:rounded-2xl overflow-hidden border border-border bg-secondary">
+      <div className="w-full h-64 md:h-80 rounded-xl md:rounded-2xl overflow-hidden border border-border dark:border-accent/50 bg-secondary">
         <iframe
           src={data.mapEmbedUrl}
           width="100%"
